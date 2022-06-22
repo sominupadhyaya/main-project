@@ -12,10 +12,14 @@ const array = [
 {name : 'Surab',grade : 13,isDead : false},
 {name : 'Oscar',grade : 14,isDead : false},
 {name : 'Salman',grade : 15,isDead : false},
+{name : "firstTerm" , english : 80 }
 ]
 
 
-const  gradeArray = array.map(({grade}) => grade)
+const  gradeArray = array.map((obj) =>{
+    const grade = obj.grade
+    return grade
+})
 
 console.log(gradeArray)
 
